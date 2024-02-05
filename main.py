@@ -4,8 +4,8 @@ import pygame.gfxdraw
 
 def main():
     pygame.init()
-    screen = pygame.display.set_mode((500, 500))
-    screen.fill((255, 0, 0))
+    screen = pygame.display.set_mode((1920, 1080))
+    screen.fill((255, 255, 255))
 
     try:
         while True:
