@@ -6,7 +6,10 @@ def main():
     pygame.init()
     screen = pygame.display.set_mode((1280, 720))
     screen.fill(('white'))
+    pygame.font.init()
 
+    font = pygame.font.SysFont("Comic Sans MS", 24)
+    text = font.render("Tekst w \"pygame\"", False, [128, 64, 255])
     try:
         while True:
             event = pygame.event.wait()
@@ -17,6 +20,7 @@ def main():
                     break
             pygame.display.flip()
     finally:
+        screen.blit(text, [0, 0])
         pygame.quit()
 
 
